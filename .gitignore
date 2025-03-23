@@ -1,0 +1,50 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+ENV/
+*.env
+.env.*
+
+# Django migration files
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.pyd
+*/migrations/*.py[cod]
+
+# Django stuff:
+db.sqlite3
+media/
+staticfiles/
+static/
+
+# VSCode
+.vscode/
+
+# Mac & Linux
+.DS_Store
+.idea/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Node modules (in case frontend assets exist)
+node_modules/
