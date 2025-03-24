@@ -112,14 +112,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 # Static file locations
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # You can change the folder if needed
+STATIC_URL = "/static/"
 
-# Make sure your custom static files are discoverable
 STATICFILES_DIRS = [
-    BASE_DIR  / "static",  # Adjust according to your app structure
+    BASE_DIR / "static",  # This is where your custom css/logo lives
 ]
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
