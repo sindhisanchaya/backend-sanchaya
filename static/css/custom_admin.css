@@ -1,0 +1,17 @@
+/* Change sidebar background color */
+.sidebar {
+    background-color: #875125 !important;
+}
+
+/* Change sidebar text color */
+.sidebar a,
+.sidebar .nav-link,
+.sidebar .nav-link span {
+    color: #ffffff !important;
+}
+
+/* Highlight active item with a lighter background */
+.sidebar .nav-link.active {
+    background-color: #a86132 !important;
+    color: #ffffff !important;
+}
