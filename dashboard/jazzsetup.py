@@ -68,8 +68,11 @@ JAZZMIN_SETTINGS = {
     "hide_models": [],
     # List of apps (and/or models) to base side menu ordering off of (does not need to contain all apps/models)
   "icons": {
-        "books": "fas fa-book",  # This is for the app named 'books'
-        "books.Book": "fas fa-book-open",  # This is for a model named 'Book' in the 'books' app
+        "auth": "fas fa-user-shield",           # AUTHENTICATION AND AUTH
+        "auth.Group": "fas fa-users-cog",       # Groups
+        "auth.User": "fas fa-user",             # Users
+        "books": "fas fa-book",                 # Your Books app (app label)
+        "books.Book": "fas fa-book-open",       # The Book model
     },
     # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
