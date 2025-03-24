@@ -16,7 +16,7 @@ DEBUG = True
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "unsafe-default-key")
 DEBUG = os.environ.get("DEBUG", "False") == "True"
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "localhost").split(",")
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -117,34 +117,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # You can change the folder
 
 # Make sure your custom static files are discoverable
 STATICFILES_DIRS = [
-    BASE_DIR / "dashboard" / "static",  # Adjust according to your app structure
+    BASE_DIR  / "static",  # Adjust according to your app structure
 ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-JAZZMIN_SETTINGS = {
-    "site_title": "Sindhi Sanchaya Admin",
-    "site_header": "Sindhi Sanchaya",
-    "site_brand": "Sanchaya Dashboard",
-    "welcome_sign": "Welcome to the Sindhi Sanchaya Admin Panel",
 
-    # Sidebar theme customization
-    "navigation_expanded": True,
-    "show_sidebar": True,
-    "custom_css": None,
-    "custom_links": {},
-    "site_logo": None,
-
-    "theme": "default",
-    "dark_mode_theme": None,
-  "custom_css": "css/custom_admin.css",
-    # Your custom colors
-    "colors": {
-        "primary": "#875125",     # Your sidebar background
-        "accent": "#ffffff",      # White text
-    },
-
-    "use_google_fonts_cdn": True,
-}
+from dashboard.jazzsetup import *
